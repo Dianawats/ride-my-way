@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ride My Way - Login</title>
+
+		<style>
+			body {
+				background: #eee;
+			}
+
+			.login-main {
+				width:24%;
+				margin: 120px auto;
+				border: 1px solid #ddd;
+				min-height: 100px;
+				padding: 20px;
+				border-radius: 2px;
+				background: #fff;
+			}
+
+			input {
+				display: block;
+				width: 93%;
+				padding: 10px;
+				margin-bottom: 20px;
+			}
+
+			button {
+				padding: 10px 20px;
+				background: blue;
+				color: white;
+				border: none;
+				font-size: 15px;
+				cursor: pointer;
+			}
+
+			div.bottom-line {
+				border-bottom: 1px solid #ddd;
+				margin: 15px 0;
+			}
+		</style>
+
+		<script type="text/javascript">
+			function driverLogin () {
+				window.location = 'driver/index.html';
+
+				return false
+			}
+
+			function passengerLogin () {
+				window.location = 'passenger/index.html';
+
+				return false
+			}
+		</script>
+	</head>
+	<body>
+		<div class="login-main">
+			<h3><center>Please login to gain access</center></h3>
+
+			<form action="" method="post">
+				<input type="text" name="username" required placeholder="Username">
+
+				<input type="password" name="password" required placeholder="Password">
+
+				<button type="button"  name="login" onclick="driverLogin()">Login as driver</button>
+				<button type="button" name="login" onclick="passengerLogin()">Login as passenger</button>
+
+				<div class="bottom-line"></div>
+
+				<span>Don't have an account yet? <a href="signup.html">Signup</a> or <a href="index.html">Go back</a></a></span>
+			</form>
+		</div>
+	</body>
+</html> 
