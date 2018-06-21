@@ -45,3 +45,6 @@ class Url_endpoints(unittest.TestCase):
         response = self.app.get('api/v1/ride/1')
         self.assertEqual(response.status_code, 200)
         self.assertIn('Fetch person X', str(response.data))
+
+if __name__ == '__main__':
+    unittest.main()
