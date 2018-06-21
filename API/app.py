@@ -24,3 +24,11 @@ join_requests = api.model('Join', {
 
 })
 
+ride = Rides_db()
+ride.create({'details': 'Fetch person X', "name": "Car pool",
+             "status": False, "destination": "ntinda"})
+ride.create({'task': 'Fetch person Y', "name": "Car pool",
+             "status": True, "destination": "Gulu"})
+ride.create({'task': 'Fetch person Z', "name": "Car pool for person Z",
+             "status": True, "destination": "Bukoto"})
+
