@@ -9,3 +9,11 @@ api = Api(app, version='1.0', title='Ride-My-Way API',
           )
 
 ns = api.namespace('api', description='Carpooling operations')
+
+store = api.model('Ride', {
+    'id': fields.Integer(readOnly=True, description='The ride unique identifier'),
+    'details': fields.String(required=True, description='The ride details'),
+    'name': fields.String(required=True, description='The ride name '),
+    'status': fields.Boolean(required=False),
+    'destination': fields.String(required=True, description='The Destination details')
+})
