@@ -23,7 +23,7 @@ class Rides_db(object):
         self.rides.append(ride)
         return ride
 
-     def update(self, id, data):
+    def update(self, id, data):
         """used for put and updating of a ride """
         ride = self.get(id)
         ride.update(data)
