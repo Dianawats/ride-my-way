@@ -13,3 +13,13 @@ class Rides_db(object):
             if ride['id'] == id:
                 return ride
         return abort(404, "Ride {} doesn't exist".format(id))
+
+    def create(self, data):
+        """ Creates a ride with the provided data """
+        ride = data
+        # ride['id'] = self.counter = self.counter + 1
+        self.counter = self.counter + 1
+        ride['id'] = self.counter
+        self.rides.append(ride)
+        return ride
+
