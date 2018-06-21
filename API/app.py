@@ -17,3 +17,10 @@ store = api.model('Ride', {
     'status': fields.Boolean(required=False),
     'destination': fields.String(required=True, description='The Destination details')
 })
+
+join_requests = api.model('Join', {
+    'id': fields.Integer(readOnly=True, description='The ride unique identifier'),
+    'join_details': fields.String(required=True, description='The ride details'),
+
+})
+
