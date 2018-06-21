@@ -30,7 +30,7 @@ class Url_endpoints(unittest.TestCase):
         """ Teardown method for the unit tests """
         pass
 
-     def test_main_route(self):
+    def test_main_route(self):
         response = self.app.get('/', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
