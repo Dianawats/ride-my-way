@@ -72,6 +72,18 @@ class Ride(Resource):
         '''Update a task given its identifier'''
         return ride.update(id, api.payload)
 
+@ns.route('/v1/ride/<int:id>/requests')
+@ns.response(404, 'Ride not found')
+@ns.param('id', 'The ride identifier (id) ')
+class RideRequest(Resource):
+    '''Make a request to join a ride'''
+    @ns.doc('Join a ride')
+    @ns.expect(join_requests)
+    @ns.marshal_with(join_requests, code=201)
+    def post(self, id):
+        '''Create a new ride'''
+        return ride.create(api.payload), 201
+
 
 
              
