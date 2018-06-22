@@ -32,5 +32,21 @@ ride.create({'task': 'Fetch person Y', "name": "Car pool",
 ride.create({'task': 'Fetch person Z', "name": "Car pool for person Z",
              "status": True, "destination": "Bukoto"})
 
+@ns.route('/v1/rides/')
+class RideList(Resource):
+    '''Shows a list of all rides, and lets the driver POST to add new tasks'''
+    @ns.doc('list_rides')
+    @ns.marshal_list_with(store)
+    def get(self):
+        '''List all rides'''
+        return ride.rides
+
+    @ns.doc('create_ride')
+    @ns.expect(store)
+    @ns.marshal_with(store, code=201)
+    def post(self):
+        '''Create a new ride'''
+        return ride.create(api.payload), 201
+
              
 
