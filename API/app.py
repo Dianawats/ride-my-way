@@ -48,5 +48,17 @@ class RideList(Resource):
         '''Create a new ride'''
         return ride.create(api.payload), 201
 
+@ns.route('/v1/ride/<int:id>')
+@ns.response(404, 'Ride not found')
+@ns.param('id', 'The ride identifier (id) ')
+class Ride(Resource):
+    '''Show a single ride  and lets you delete them'''
+    @ns.doc('get_store')
+    @ns.marshal_with(store)
+    def get(self, id):
+        '''Fetch a given resource with a given id'''
+        return ride.get(id)
+
+
              
 
