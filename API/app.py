@@ -59,6 +59,20 @@ class Ride(Resource):
         '''Fetch a given resource with a given id'''
         return ride.get(id)
 
+    @ns.doc('delete_store')
+    @ns.response(204, 'store deleted')
+    def delete(self, id):
+        '''Delete a task given its identifier'''
+        ride.delete(id)
+        return '', 204
+
+    @ns.expect(store)
+    @ns.marshal_with(store)
+    def put(self, id):
+        '''Update a task given its identifier'''
+        return ride.update(id, api.payload)
+
+
 
              
 
