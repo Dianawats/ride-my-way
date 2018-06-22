@@ -1,3 +1,4 @@
+import os
 import unittest
 
 from API.app import app
@@ -46,11 +47,12 @@ class Url_endpoints(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn('Fetch person X', str(response.data))
 
-    def test_driver_can_create_a_ride(self):
-        """ Test whether we can get all the rides """
-        response = self.app.post('api/v1/rides/', self.dummy_data)
-        self.assertEqual(response.status_code, 201)
-        self.assertIn('I am going to kamwokya', str(response.data))
+
+    # def test_driver_can_create_a_ride(self):
+    #     """ Test whether we can get all the rides """
+    #     response = self.app.post('api/v1/rides/', self.dummy_data)
+    #     self.assertEqual(response.status_code, 201)
+    #     self.assertIn('I am going to kamwokya', str(response.data))
 
 
 if __name__ == '__main__':

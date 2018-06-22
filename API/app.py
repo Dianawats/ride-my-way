@@ -18,11 +18,13 @@ store = api.model('Ride', {
     'destination': fields.String(required=True, description='The Destination details')
 })
 
+
 join_requests = api.model('Join', {
     'id': fields.Integer(readOnly=True, description='The ride unique identifier'),
     'join_details': fields.String(required=True, description='The ride details'),
 
 })
+
 
 ride = Rides_db()
 ride.create({'details': 'Fetch person X', "name": "Car pool",
@@ -31,6 +33,7 @@ ride.create({'task': 'Fetch person Y', "name": "Car pool",
              "status": True, "destination": "Gulu"})
 ride.create({'task': 'Fetch person Z', "name": "Car pool for person Z",
              "status": True, "destination": "Bukoto"})
+
 
 @ns.route('/v1/rides/')
 class RideList(Resource):
@@ -47,6 +50,7 @@ class RideList(Resource):
     def post(self):
         '''Create a new ride'''
         return ride.create(api.payload), 201
+
 
 @ns.route('/v1/ride/<int:id>')
 @ns.response(404, 'Ride not found')
@@ -72,6 +76,7 @@ class Ride(Resource):
         '''Update a task given its identifier'''
         return ride.update(id, api.payload)
 
+
 @ns.route('/v1/ride/<int:id>/requests')
 @ns.response(404, 'Ride not found')
 @ns.param('id', 'The ride identifier (id) ')
@@ -83,8 +88,4 @@ class RideRequest(Resource):
     def post(self, id):
         '''Create a new ride'''
         return ride.create(api.payload), 201
-
-
-
-             
 

@@ -29,12 +29,8 @@ class Rides_db(object):
         ride.update(data)
         return ride
 
-    # def delete(self, id):
-    #     """ deletes a ride"""
-    #     ride = self.get(id)
-    #     self.rides.remove(ride)
-
-
-
-
+    def delete(self, id):
+        """ deletes a ride"""
+        ride = self.get(id)
+        self.rides.remove(ride)
 
