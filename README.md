@@ -7,14 +7,14 @@ Ride-my-way
 
 is a carpooling application that provides derivers with the ability to create ride offers and passengers to join available ride offers.
 
-Project features
+Project features:
 
 Get all ride offers
 Get a specific ride offer
 Create a ride offer
 Make a request to join a ride.
 
-Technologies used to develop this app
+Technologies used to develop this app:
 
 Python Language
 Flask framework
@@ -22,12 +22,12 @@ Postman
 Visualcode
 Html, CSS and Javascript
 
-To run the unitests
+To run the unitests:
 
 Pytests
 coverage $ nosetests --with-coverage --cover-erase --cover-package=app/ && coverage report
 
-To run the Application
+To run the Application:
 
 $ python app.py
 
