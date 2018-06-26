@@ -1,0 +1,3 @@
+{
+  "tests/test_url_endpoints.py::Url_endpoints::test_driver_can_create_a_ride": true
+}
