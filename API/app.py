@@ -25,14 +25,13 @@ join_requests = api.model('Join', {
 
 })
 
+details = 'Fetch person'
+name = 'Car pool'
+status = False
+destination = 'Ntinda'
 
-ride = Rides_db()
-ride.create({'details': 'Fetch person X', "name": "Car pool",
-             "status": False, "destination": "ntinda"})
-ride.create({'task': 'Fetch person Y', "name": "Car pool",
-             "status": True, "destination": "Gulu"})
-ride.create({'task': 'Fetch person Z', "name": "Car pool for person Z",
-             "status": True, "destination": "Bukoto"})
+ride = Rides_db(details, name, status, destination)
+ride.get_all()
 
 
 @ns.route('/v1/rides/')
@@ -63,18 +62,18 @@ class Ride(Resource):
         '''Fetch a given resource with a given id'''
         return ride.get(id)
 
-    @ns.doc('delete_store')
-    @ns.response(204, 'store deleted')
-    def delete(self, id):
-        '''Delete a task given its identifier'''
-        ride.delete(id)
-        return '', 204
+    # @ns.doc('delete_store')
+    # @ns.response(204, 'store deleted')
+    # def delete(self, id):
+    #     '''Delete a task given its identifier'''
+    #     ride.delete(id)
+    #     return '', 204
 
-    @ns.expect(store)
-    @ns.marshal_with(store)
-    def put(self, id):
-        '''Update a task given its identifier'''
-        return ride.update(id, api.payload)
+    # @ns.expect(store)
+    # @ns.marshal_with(store)
+    # def put(self, id):
+    #     '''Update a task given its identifier'''
+    #     return ride.update(id, api.payload)
 
 
 @ns.route('/v1/ride/<int:id>/requests')
