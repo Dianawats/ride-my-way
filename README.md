@@ -13,7 +13,7 @@ is a carpooling application that provides derivers with the ability to create ri
 
 project captures the following routes:
 
-![Capture.png](https://raw.github.com/Dianawats/ride-my-way/Apiv1*/Pictures/to/Capture.png)
+![alt text](https://raw.github.com/Dianawats/ride-my-way/Apiv1*/Pictures/to/Capture.png)
 
 Project features:
 
@@ -35,13 +35,20 @@ To run the unitests:
 Pytests
 coverage $ nosetests --with-coverage --cover-erase --cover-package=app/ && coverage report
 
-To run the Application:
+To run the unit tests invoke/run the command below.
+  $ nosetests tests or nosetests
 
-$ python app.py
+or for detailed output on unit tests run with verbose.
 
-Get all project dependencies by running the command below.
+  $ nosetests --with-coverage -v
 
-$ pip freeze -r requirements.txt
+To run the application invoke the command below.
+
+  $ python app.py
+
+Now that the server is running , open your browser and run one of the links below.
+
+  $ localhost:5000  or  127.0.0.1:5000
 
 Get started:
 
