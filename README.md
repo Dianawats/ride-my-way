@@ -5,6 +5,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master)](https://coveralls.io/github/Dianawats/ride-my-way?branch=master)
 
+
 Ride-my-way
 
 is a carpooling application that provides derivers with the ability to create ride offers and passengers to join available ride offers.
