@@ -3,7 +3,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/809627c07a98c069d4b2/maintainability)](https://codeclimate.com/github/Dianawats/ride-my-way/maintainability)
 
-[![Test Coverage](https://api.codeclimate.com/v1/badges/809627c07a98c069d4b2/test_coverage)](https://codeclimate.com/github/Dianawats/ride-my-way/test_coverage)
+[![Coverage Status](https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master)](https://coveralls.io/github/Dianawats/ride-my-way?branch=master)
 
 Ride-my-way
 
