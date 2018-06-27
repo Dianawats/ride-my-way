@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/809627c07a98c069d4b2/maintainability)](https://codeclimate.com/github/Dianawats/ride-my-way/maintainability)
 
+[![Test Coverage](https://api.codeclimate.com/v1/badges/809627c07a98c069d4b2/test_coverage)](https://codeclimate.com/github/Dianawats/ride-my-way/test_coverage)
+
 Ride-my-way
 
 is a carpooling application that provides derivers with the ability to create ride offers and passengers to join available ride offers.
