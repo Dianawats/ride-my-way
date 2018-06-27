@@ -5,10 +5,22 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master)](https://coveralls.io/github/Dianawats/ride-my-way?branch=master)
 
+https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master(Coverage Status)!:https://coveralls.io/github/Dianawats/ride-my-way?branch=master
+
+{<img src="https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master" alt="Coverage Status" />}[https://coveralls.io/github/Dianawats/ride-my-way?branch=master]
+<a href='https://coveralls.io/github/Dianawats/ride-my-way?branch=master'><img src='https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master' alt='Coverage Status' /></a>
+.. image:: https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master
+:target: https://coveralls.io/github/Dianawats/ride-my-way?branch=master
+
+
 
 Ride-my-way
 
 is a carpooling application that provides derivers with the ability to create ride offers and passengers to join available ride offers.
+
+project captures the following routes:
+
+![alt text](https://raw.github.com/Dianawats/ride-my-way/Apiv1*/path/to/capture.png)
 
 Project features:
 
