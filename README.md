@@ -11,15 +11,15 @@ Ride-my-way
 
 is a carpooling application that provides derivers with the ability to create ride offers and passengers to join available ride offers.
 
-project captures the following routes:
-
-(https://raw.github.com/Dianawats/ride-my-way/Apiv1/Pictures/to/Capture.png)
 
 Project features:
 
 Get all ride offers
+
 Get a specific ride offer
+
 Create a ride offer
+
 Make a request to join a ride.
 
 Technologies used to develop this app:
