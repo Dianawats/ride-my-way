@@ -13,7 +13,7 @@ is a carpooling application that provides derivers with the ability to create ri
 
 project captures the following routes:
 
-![alt text](https://raw.github.com/Dianawats/ride-my-way/Apiv1*/Pictures/to/Capture.png)
+(https://raw.github.com/Dianawats/ride-my-way/Apiv1/Pictures/to/Capture.png)
 
 Project features:
 
@@ -36,6 +36,7 @@ Pytests
 coverage $ nosetests --with-coverage --cover-erase --cover-package=app/ && coverage report
 
 To run the unit tests invoke/run the command below.
+
   $ nosetests tests or nosetests
 
 or for detailed output on unit tests run with verbose.
