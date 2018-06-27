@@ -5,13 +5,6 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master)](https://coveralls.io/github/Dianawats/ride-my-way?branch=master)
 
-https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master(Coverage Status)!:https://coveralls.io/github/Dianawats/ride-my-way?branch=master
-
-{<img src="https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master" alt="Coverage Status" />}[https://coveralls.io/github/Dianawats/ride-my-way?branch=master]
-<a href='https://coveralls.io/github/Dianawats/ride-my-way?branch=master'><img src='https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master' alt='Coverage Status' /></a>
-.. image:: https://coveralls.io/repos/github/Dianawats/ride-my-way/badge.svg?branch=master
-:target: https://coveralls.io/github/Dianawats/ride-my-way?branch=master
-
 
 
 Ride-my-way
