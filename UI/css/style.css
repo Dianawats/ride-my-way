@@ -4,151 +4,6 @@ body {
     padding: 0;
 }
 
-.signup-main, .login-main {
-    width:25%;
-    margin: 100px auto;
-    border: 1px solid #ddd;
-    min-height: 100px;
-    padding: 20px;
-    border-radius: 2px;
-    background: #fff;
-}
-
-h3 {
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-}
-
-input {
-    display: block;
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    background: blue;
-    color: white;
-    border: none;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-div.bottom-line {
-    border-bottom: 1px solid #ddd;
-    margin: 15px 0;
-}
-
-
-
-@media only screen and (max-width: 1350px) {
-    .signup-main, .login-main {
-        width: 28%;
-    }
-
-    .sidebar {
-        width: 25%;
-    }
-
-    .rightside-content {
-        width: 65%;
-    }
-}
-
-
-
-@media only screen and (max-width: 1150px) {
-    .signup-main, .login-main {
-        width: 40%;
-    }
-
-    .sidebar {
-        width: 25%;
-    }
-
-    .rightside-content {
-        width: 65%;
-    }
-}
-
-
-
-@media only screen and (max-width: 880px){
-    .signup-main, .login-main {
-        width: 50%;
-    }
-
-    .sidebar {
-        width: 94%;
-    }
-
-    .rightside-content {
-        width: 94%;
-        border: none;
-    }
-}
-
-@media only screen and (max-width: 680px){
-    .signup-main, .login-main {
-        width: 67.5%;
-    }
-
-    .sidebar {
-        width: 94%;
-    }
-
-    .rightside-content {
-        width: 94%;
-        border: none;
-    }
-}
-
-@media only screen and (max-width: 480px){
-    .signup-main, .login-main {
-        width: 83%;
-    }
-
-    .sidebar {
-        width: 94%;
-    }
-
-    .rightside-content {
-        width: 94%;
-        border: none;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    .signup-main, .login-main {
-        width: 90%;
-    }
-
-    .sidebar {
-        width: 94%;
-    }
-
-    .rightside-content {
-        width: 94%;
-        border: none;
-    }
-
-    button {
-        padding: 8px 15px;
-        background: blue;
-        color: white;
-        border: none;
-        font-size: 15px;
-        cursor: pointer;
-    }
-}
-
 /*
     Main page styles
 */
@@ -290,6 +145,181 @@ div.bottom-line {
         font-size: 11px;
     }
 
+}
+
+.signup-main, .login-main {
+    width:25%;
+    margin: 100px auto;
+    border: 1px solid #ddd;
+    min-height: 100px;
+    padding: 20px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.center-50 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h3 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+input {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 98%;
+    height: 120px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+div.bottom-line {
+    border-bottom: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+
+
+@media only screen and (max-width: 1350px) {
+    .signup-main, .login-main {
+        width: 28%;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .rightside-content {
+        width: 65%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+    .signup-main, .login-main {
+        width: 40%;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .rightside-content {
+        width: 65%;
+    }
+
+    .center-50 {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 880px){
+    .signup-main, .login-main {
+        width: 50%;
+    }
+
+    .sidebar {
+        width: 94%;
+    }
+
+    .rightside-content {
+        width: 94%;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .signup-main, .login-main {
+        width: 67.5%;
+    }
+
+    .sidebar {
+        width: 94%;
+    }
+
+    .rightside-content {
+        width: 94%;
+        border: none;
+    }
+
+    .center-50 {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .signup-main, .login-main {
+        width: 83%;
+    }
+
+    .sidebar {
+        width: 94%;
+    }
+
+    .rightside-content {
+        width: 94%;
+        border: none;
+    }
+
+    .center-50 {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .signup-main, .login-main {
+        width: 90%;
+    }
+
+    .sidebar {
+        width: 94%;
+    }
+
+    .rightside-content {
+        width: 94%;
+        border: none;
+    }
+
+    button {
+        padding: 8px 15px;
+        background: blue;
+        color: white;
+        border: none;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .center-50 {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 /*
