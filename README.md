@@ -51,6 +51,7 @@ Now that the server is running , open your browser and run one of the links belo
 
   $ localhost:5000  or  127.0.0.1:5000
 
+
 Get started:
 
 clone the repo $ git clone https://github.com/Dianawats/ride-my-way
