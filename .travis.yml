@@ -10,7 +10,7 @@ install:
 script:
 - pytest
 - 
-- coverage3 run tests/test_url_endpoints.py
+- coverage3 run API\tests\test_url_endpoints.py
 - coveralls
 - cd ..
 env:
