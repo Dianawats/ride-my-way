@@ -8,11 +8,8 @@ install:
 - pip3 install coverage
 - pip3 install coveralls
 script:
-- pytest
-- 
-- coverage3 run API\tests\test_url_endpoints.py
-- coveralls
-- cd ..
+- py.test --cov=API
+
 env:
   global:
   - CC_TEST_REPORTER_ID=
@@ -27,3 +24,4 @@ before_script:
 - "./cc-test-reporter before-build"
 after_script:
 - "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
+- coveralls

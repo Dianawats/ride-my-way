@@ -1,3 +1,7 @@
 [
-  "add.py::test_add"
+  "API/tests/test_url_endpoints.py::Url_endpoints::test_driver_can_create_a_ride",
+  "API/tests/test_url_endpoints.py::Url_endpoints::test_main_route",
+  "API/tests/test_url_endpoints.py::Url_endpoints::test_passenger_can_request_to_join_a_ride",
+  "API/tests/test_url_endpoints.py::Url_endpoints::test_user_can_get_all_rides",
+  "API/tests/test_url_endpoints.py::Url_endpoints::test_user_can_get_one_request_for_ride"
 ]
